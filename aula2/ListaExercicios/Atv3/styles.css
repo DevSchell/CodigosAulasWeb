@@ -1,0 +1,27 @@
+body {
+    background-color: #FEFAE0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #EE4E4E;
+}
+
+tr:nth-child(odd) {
+    background-color: #00712D;
+}
+
+table {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.card img {
+    witdh: 100%
+}
