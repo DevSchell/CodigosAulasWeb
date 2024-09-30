@@ -1,0 +1,1 @@
+Esta página está aqui apenas para separar a junção de pastas aula1/Atividades, eu gosto de deixar elas mais separadas pra seguir a estrutura do restante dos arquivos
