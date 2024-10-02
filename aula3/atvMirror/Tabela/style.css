@@ -1,0 +1,119 @@
+table {
+    display: flex;
+    justify-content: center;
+}
+
+tr:nth-child(even){
+    background-color:rgb(240, 255, 240);
+}
+td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    padding: 20px;
+}
+
+td:hover, th:hover{
+    background-color: rgba(211, 211, 211, 0.915);
+}
+
+th {
+    background-color:rgb(78, 166, 46);
+    color: white;
+}
+
+
+
+/* Estilos Específicos */
+
+.pos1, .pos2, .pos3, .pos4 {
+    background-color: rgb(132, 227, 143);
+}
+
+.pos5, .pos6 {
+    background-color: rgb(218, 233, 247);
+}
+
+.pos7, .pos8, .pos9, .pos10, .pos11, .pos12 {
+    background-color: rgb(218, 233, 247);
+}
+
+.pos13, .pos14, .pos15, .pos16 {
+    background-color: white;
+}
+
+.pos17, .pos18, .pos19, .pos20 {
+    background-color: rgb(250, 226, 212);
+}
+
+.J1, .J2, .J3, .J4, .J5, .J8, .J9, .J13, .J16, .J17 {
+    background-color: rgb(191, 230, 245);
+}
+
+.J6, .J7, .J11, .J18, .J19 {
+    background-color: rgb(214, 192, 178);
+}
+
+.J10, .J12, .J20, .J15 {
+    background-color: rgb(235, 152, 108);
+}
+
+.J14 {
+    background-color: rgb(235, 152, 108)
+}
+
+.Apr1, .Apr2 { 
+    background-color: rgb(99, 191, 124); /* 72% */
+}
+
+.Apr3 {
+    background-color: rgb(213, 237, 222);
+}
+
+.Apr4, .Apr5, .Apr14 {
+    background-color: rgb(213, 237, 222);
+}
+
+.Apr6 {
+    background-color: rgb(138, 207, 157);
+}
+
+.Apr7 {
+    background-color: rgb(184, 224, 196);
+}
+
+.Apr8, .Apr12 {
+    background-color: rgb(252, 252, 255);
+}
+
+.Apr9 {
+    background-color: rgb(250, 235, 238);
+}
+
+.Apr10 {
+    background-color: rgb(216, 237, 223)
+}
+
+.Apr11 {
+    background-color: rgb(250, 240, 243);
+}
+
+.Apr13 {
+    background-color: rgb(250, 202, 205);
+}
+
+.Apr15 {
+    background-color: rgb(250, 225, 228);
+}
+
+.Apr16, .Apr17 {
+    background-color: rgb(250, 185, 188);
+}
+
+.Apr18, .Apr19 {
+    background-color: rgb(247, 124, 126);
+}
+
+.Apr20 {
+    background-color: rgb(247, 104, 106);
+}
