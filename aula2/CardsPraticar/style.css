@@ -1,23 +1,32 @@
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    width: 200px;
-    border-radius: 25px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar efeito de card */
-}
-
-.card img {
-    width: 100%;
-}
-
-.card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-
+body {
+    background-color: lightsteelblue;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .container {
-    padding: 2px 16px;
-    background-color: rgb(103, 2, 197);
-    color: white;
+    display: flex;
+    gap: 20px; /* Espaço entre os cards */
+    border-radius: 25px;
+    transition: 0.3s;
   }
   
+  .card {
+    background-color: #fbfbfb;
+    padding: 20px;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+    color: inherit;
+  }
+
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    transform: scale(1.05); /* Aumenta o card ao passar o mouse */
+  }
+
+  .card img {
+    width: 100%;
+    height: 250px; /* Definindo uma altura fixa */
+    object-fit: cover; /* Ajusta a imagem para cobrir o espaço sem distorcer */
+    border-radius: 5px;
+  }
