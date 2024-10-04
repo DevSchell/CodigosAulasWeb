@@ -1,0 +1,74 @@
+.nav-bar {
+    list-style-type: none;
+    text-align: center;
+    background-color: rgb(66, 27, 103);
+    color: white;
+    padding: 10px 0;
+}
+
+.nav-bar li {
+    display: inline-block; /* Isso que faz com que os itens da lista fiquem na horizontal */
+    margin: 0 200px;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    display: block; /* Faz ocupar todo o espaço disponível*/
+}
+
+.dropdown-conteudo {
+    display: none; /* Faz ele ficar "invisível" */
+    position: absolute; 
+    background-color: rgb(206, 157, 252);
+    z-index: 1; /* Faz ficar na "frente" do site, como se o site tivesse 3 dimensões */
+}
+
+.dropdown:hover .dropdown-conteudo {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    font-size: 70px;
+    display: block;
+    margin: auto;
+    padding: 20px;
+    border-radius: 25px;
+    color: white;
+    background-color: blueviolet;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    background-color: rgb(38, 3, 70);
+    color: white;
+}
+
+fieldset {
+    border: none;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+
+footer ul {
+    list-style-type: none
+}
+
+img {
+    display: block;
+    margin: auto;
+}

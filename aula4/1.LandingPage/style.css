@@ -1,0 +1,77 @@
+/* Estilos Gerais */
+h1 {
+    text-align: center;
+    font-size: 150px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 80px;
+}
+
+body {
+    background-color: #a9f5ff;
+}
+
+h2 {
+    text-align: center;
+}
+
+button {
+    background-color: #B8001F;
+    font-size: 80px;
+    display: block;
+    margin: auto;
+    border-radius: 25px;
+}
+
+button:hover {
+    background-color: #E7D37F;
+    color: white;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+.image {
+    display: block;
+    margin: auto;
+    padding: 10px;
+    width: 500px;
+}
+
+/* Estilos Menu horizontal */
+.menu-horizontal {
+    list-style-type: none;
+    text-align: center;
+    background-color: #B8001F;
+    padding: 10px 0;
+}
+
+.menu-horizontal li{
+    margin: 0 15px;
+    display: inline-block;
+}
+
+.menu-horizontal a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+}
+
+
+
+/* Estilos DropDown */
+.dropdown-conteudo {
+    display:none;
+    position: absolute;
+    background-color: #E7D37F;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-conteudo {
+    display: block;
+}
