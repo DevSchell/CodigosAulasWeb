@@ -1,21 +1,103 @@
-/* Estilos Gerais*/
-img {
-    width: 100%;
-    border-radius: 5px 5px 0 0;
-    
+@font-face {
+    font-family: 'Germania' ;
+    src: url('Fontes/Germania');
 }
 
 /* Barra de Navegação*/
+.nav-bar {
+    list-style-type: none;
+    text-align: center;
+    background-color: #B8001F;
+    padding: 10px 0;
+}
+
+.nav-bar li {
+    display: inline-block;
+    margin: 0 200px;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+    font: bold;
+}
+
+.dropdown-conteudo {
+    display: none;
+    position: absolute;
+    background-color: black;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-conteudo {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Estilos Gerais*/
+.special {
+    font-family: 'Germania';
+    padding: 10px;
+}
+
+body {
+    background-color: #FEF9D9;/* #TODO*/
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+img {
+    width: 100%;
+    height: 150px;
+    border-radius: 25px 25px 0 0;
+    object-fit: cover; 
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+    padding: 50px;
+}
+
+button {
+    background-color: #B8001F;
+    font-size: 100px;
+    border-radius: 25px;
+}
+
+button:hover {
+    background-color: black;
+}
+
+.text-explicacao {
+    text-align: right;
+    font-size: larger;
+}
+
 
 /* Cards das atrações*/
+.card a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     width: 200px;
+    background-color: #B8001F;
+    margin: 5px;
+    border-radius: 25px;
 }
   
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    width: 250px;
+    background-color: black;
 }
   
 .container {
@@ -25,6 +107,55 @@ img {
 }
 
 .cards {
+    justify-content: center;
     display: flex;
-    flex-direction: row; /* #TODO */
+    flex-direction: row;
+    text-align: center;
+}
+
+.explicacao {
+    display: flex; /* Coloca os elementos denro do container lado a lado*/
+    align-items: flex-start; /* Alinha a imagem ao topo do texto*/
+    gap: 20px; /* Espaçamento entre imagem e texto*/
+}
+
+.text {
+    flex: 1;
+    padding-top: 50px ;
+}
+
+.img-lado {
+    width: 500px;
+    height: auto;
+    border: 1px;
+    border-radius: 25px;
+}
+
+.explicacao h1 {
+    text-align: center;
+    font-size: 100px;
+    color: #B8001F;
+}
+
+.compra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    background-color: #B8001F;
+    color: white;
+    text-align: center;
+}
+
+footer div {
+    text-align: center;
+    align-items: center;
+}
+
+.titulo {
+    font-size: 100px;
+    text-align: center;
+    color: #B8001F;
 }
