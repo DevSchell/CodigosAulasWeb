@@ -8,28 +8,16 @@
 </head>
 <body>
 
-    <h3>Add itens ao array</h3>
     <form>
-
-        <label for="item1">Item 1</label>
-        <input type="text" id="item1" name="item1">
-
-        <label for="item2">Item 2</label>
-        <input type="text" id="item2" name="item2">
-
-        <label for="item3">Item 3</label>
-        <input type="text" id="item3" name="item3">
-
+        <label for="numero">Número</label>
+        <input type="number" name="numero" id="numero">
     </form>
+        <br>
+        <button type="submit" onclick="Fatorial()"> Enviar </button> <br><br>
+        <label for="resultado">Resultado</label>
+        <h1 id="resultado"></h1>
 
-    <button type="submit" onclick="iniciar()">Iniciar aplicação</button>
-
-        <ul id="lista">
-            <li id="pos1"> </li>
-            <li id="pos2"> </li>
-            <li id="pos3"> </li>
-        </ul>
-
+    
 <script src="script.js"></script>
 </body>
 </html>

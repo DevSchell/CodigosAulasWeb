@@ -1,7 +1,10 @@
-function iniciar(){
-    const produtos = [document.getElementById("item1").value, document.getElementById("item2").value, document.getElementById("item1").value]
-    
-    document.getElementById("pos1").innerHTML = produtos[0];
-    document.getElementById("pos2").innerHTML = produtos[1];
-    document.getElementById("pos3").innerHTML = produtos[2];
+function Fatorial () {
+    let numero = document.getElementById("numero").value;
+    let contador = document.getElementById("numero").value - 1;
+
+    while (contador > 0) {
+        numero = numero * contador;
+        contador--
+    }
+    document.getElementById("resultado").innerHTML = numero;
 }

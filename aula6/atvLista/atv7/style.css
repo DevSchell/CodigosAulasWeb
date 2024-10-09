@@ -1,0 +1,20 @@
+ul {
+    list-style-type: none;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: white;
+}
+
+button {
+    margin: 25px;
+}
+
+h3 {
+    text-align: center;
+}
