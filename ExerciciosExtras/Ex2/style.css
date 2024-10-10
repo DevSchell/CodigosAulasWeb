@@ -1,0 +1,29 @@
+/* Barra de Navegação */
+.nav-bar {
+    list-style-type: none;
+    text-align: center;
+    background-color: #091057;
+    padding: 10px;
+}
+
+.nav-bar li {
+    display: inline-block;
+    margin: 0 200px;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    color: #DBD3D3;
+}
+
+form {
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    width: 15%;
+    justify-content: center;
+    margin: 0 auto;
+}
+
