@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="calculadora">
+        <div class="visor" id="output"> </div>
+        <div class="teclas">
+            <button class="tecla" onclick="AdicionarValor('+')">+</button>
+            <button class="tecla" onclick="AdicionarValor('-')">-</button>
+            <button class="tecla" onclick="AdicionarValor('*')">&times;</button>
+            <button class="tecla" onclick="AdicionarValor('/')">&divide;</button>
+            <button class="tecla" onclick="AdicionarValor('7')">7</button>
+            <button class="tecla" onclick="AdicionarValor('8')">8</button>
+            <button class="tecla" onclick="AdicionarValor('9')">9</button>
+            <button class="tecla" onclick="AdicionarValor('4')">4</button>
+            <button class="tecla" onclick="AdicionarValor('5')">5</button>
+            <button class="tecla" onclick="AdicionarValor('6')">6</button>
+            <button class="tecla" onclick="AdicionarValor('1')">1</button>
+            <button class="tecla" onclick="AdicionarValor('2')">2</button>
+            <button class="tecla" onclick="AdicionarValor('3')">3</button>
+            <button class="tecla" onclick="AdicionarValor('0')">0</button>
+            <button class="tecla" onclick="AdicionarValor('.')">.</button>
+            <button class="tecla" onclick="Reset()">AC</button>
+            <button class="tecla" onclick="Resolver()">=</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
