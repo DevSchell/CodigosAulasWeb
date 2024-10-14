@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gerenciamento de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="tarefas-criar">
+
+    <header>
+        <h1>Gerenciador de Tarefas</h1>
+    </header>
+
+    <form>
+        <label for="nome">Nome de entrada: </label> <input type="text" id="nome" name="nome"> <br>
+        <label for="data">Data de Vencimento: </label> <input type="date" id="data" name="data" required> <br>
+        <label for="prioridade">Defina a prioridade: </label> <br>
+        <input type="radio" id="alta"   name="prioridade" value="alta">
+        <label for="alta">Alta</label> <br>
+        <input type="radio" id="media" name="prioridade" value="media">
+        <label for="media">Média</label> <br>
+        <input type="radio" id="baixa" name="prioridade" value="baixa">
+        <label for="baixa">Baixa</label> <br>
+        
+        <label for="descricao">Descrição: </label>
+        <textarea name="descricao" id="descricao"></textarea> <br>
+        
+        <label for="senha">Senha: </label> <input type="password" name="senha" id="senha"> <br> <br>
+        <button type="button" onclick="AdicionarTarefa()">Adicionar tarefa</button>
+    </form>
+
+</section>
+    
+    
+    <section class="tarefas-lista">
+        <h3>Tarefas Pendentes</h3>
+        <p id="tarefas"></p>
+        <button type="button" onclick="Remover()">Remover</button>
+        <h2> Número de tarefas: <span id="contador-tarefas"> </span></h2>
+    </section>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
