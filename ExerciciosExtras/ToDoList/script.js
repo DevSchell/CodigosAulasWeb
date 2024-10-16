@@ -1,13 +1,42 @@
-let TaskList = [];
+let tasks = [];
 
-function AdicionarTarefa() {
-    console.log("Função AdicionarTarefa está sendo chamada");
-    
-    const nome = document.getElementById("nome").value;
-    const data = document.getElementById("data").value;
-    const prioridade = document.querySelector('input[name="prioridade"]:checked').value;
-    const descricao = document.getElementById("descricao").value;
-    const senhaInput = document.getElementById("senha").value;
+function adicionarTarefa(){
+    event.preventDefault();
+    //Validações
+   if (!document.getElementById("nome").value || !document.getElementById("descricao").value) {
+        alert("não pode")
+        return;    
+    }
 
-    alert(nome); // Teste para garantir que o valor do campo "nome" está sendo obtido
+
+    criarTarefa();
+    resetarInputs();
+    mostrarTarefas();
+}
+
+function resetarInputs(){
+    document.getElementById("nome").value = "";
+    document.getElementById("data").value = "";
+    document.getElementById("prioridade").value = "";
+    document.getElementById("descricao").value = "";
+}
+
+function criarTarefa(){
+    const obj = {
+        nome: document.getElementById("nome").value,
+        //data: document.getElementById("data").value,
+        //prioridade: document.getElementById("propriedade").value,
+        descricao: document.getElementById("descricao").value
+    }
+    tasks.push(obj);
+}
+
+function mostrarTarefas(){
+    let lista = document.getElementById("tarefa-lista");
+    let i = 0;
+    lista.innerHTML = "";
+
+    while (i < tasks.length, i++) {
+        lista.innerHTML += tasks[i].nome + "<br>";
+    }
 }
