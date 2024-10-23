@@ -1,0 +1,81 @@
+.navbar-brand {
+    filter: invert();
+}
+
+* {
+    margin-top: -3px;
+}
+
+body {
+    background-color: rgb(23, 18, 51);
+}
+
+h1 {
+    color: white;
+}
+
+#nav-main {
+    background-color: rgb(67, 56, 120);
+    padding: 10px;
+}
+
+#nav-main a {
+    text-decoration: none;
+    color: white;
+}
+
+#nav-dep {
+    background: rgb(41, 33, 79);
+    color: white;
+    font-weight: bold;
+    margin-top: -16px;
+    margin-bottom: -10px;
+}
+
+.vistos-ultimo img, .departamentos img {
+    width: 250px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.vistos-ultimo, .departamentos {
+    background-color: blueviolet;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(41, 33, 79);
+    border-radius: 25px;
+    margin: 30px;
+}
+
+.vistos-ultimo a, .departamentos a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(41, 33, 79);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .vistos-ultimo, .departamentos {
+        overflow: scroll;
+    }
+}
