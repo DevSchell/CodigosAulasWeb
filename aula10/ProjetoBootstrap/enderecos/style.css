@@ -101,8 +101,30 @@ footer a {
         width: 100%;
     }
 
+    #nav-dep {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        white-space: nowrap;
+        padding: 10px;
+    }
+    
+    #nav-dep a {
+        flex: 0 0 auto; /* Evita que os links diminuam de tamanho */
+        margin-right: 15px; /* Espaçamento entre os links */
+    }
+    
+
     #add-end {
         display: flex;
         flex-direction: column;
+        align-items: center; /* Centraliza horizontalmente */
+    }
+    
+    #add-endereco {
+        width: 80%; /* Ajuste conforme necessário */
+        max-width: 400px; /* Limite de largura para centralizar melhor */
+        text-align: center;
+        margin-bottom: 20px; /* Espaçamento entre os formulários */
     }
 }

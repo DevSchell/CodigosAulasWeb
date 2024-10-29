@@ -102,12 +102,54 @@ footer a {
 }
 
 @media (max-width: 800px) {
-    .vistos-ultimo, .departamentos {
-        overflow: scroll;
+    @media (max-width: 800px) {
+        /* Ajuste para navegação principal */
+        #nav-main {
+            padding: 5px; /* Reduz o padding */
+        }
+    
+        /* Torna #nav-dep rolável horizontalmente */
+        #nav-dep {
+            display: flex;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+    
+        #nav-dep .navbar-brand {
+            flex: 0 0 auto;
+            padding: 0 10px;
+        }
+    
+        /* Seções de Produtos */
+        .vistos-ultimo, .departamentos {
+            flex-direction: row;
+            align-items: center;
+            overflow: scroll;
+            padding: 10px;
+            margin: 10px;
+        }
+    
+        .vistos-ultimo div, .departamentos div {
+            width: 90%; /* Para que os itens ocupem a largura disponível */
+            margin-bottom: 15px;
+        }
+    
+        /* Imagens em menor escala */
+        .vistos-ultimo img, .departamentos img {
+            width: 200px;
+            height: auto;
+        }
+    
+        /* Footer alinhado em coluna */
+        footer {
+            flex-direction: column;
+            text-align: center;
+            padding: 10px;
+        }
+    
+        footer div {
+            margin-bottom: 10px;
+        }
     }
-
-    #nav-dep {
-        overflow-x: auto;
-        width: 100%;
-    }
+    
 }
