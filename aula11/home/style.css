@@ -1,0 +1,19 @@
+#navbar {
+    background-color: #C7253E;
+    position: sticky;
+    bottom: 0;
+}
+
+#navbar img {
+    filter: invert();
+}
+
+#nav2 {
+    background-color: #C7253E;
+}
+
+#nav2 img {
+    filter: invert();
+    width: 50px;
+    height: auto;
+}
