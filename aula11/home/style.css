@@ -25,12 +25,12 @@
     width: 300px;
 }
 
-#slideCategorias img {
+#slide img {
     width: 200px;
     height: auto;
     border-radius: 25px;
 }
 
-#slideCategorias {
+#slide {
     overflow-x: auto;
 }
