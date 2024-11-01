@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contato</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a href="/aula12-prova-final/portifolio/portfolio.html"> <img src="../img/logo-triangular.png" width="30" height="24"></a>
+        <a class="navbar-brand" href="../portifolio/portfolio.html">Schell Inc</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Produtos
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Banco de Clientes</a></li>
+                <li><a class="dropdown-item" href="#">Sites personalizados</a></li>
+                <li><a class="dropdown-item" href="#">Aplicativos Web</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Conta
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../registro/register.html">Cadastrar-se</a></li>
+                <li><a class="dropdown-item" href="../login/login.html">Fazer Login</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+      <div>
+
+          <form class="container mt-5" style="width: 500px;">
+              <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Preencha com seu e-mail</label>
+                  <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required placeholder="E-mail">
+                  <div id="emailHelp" class="form-text">Nós não compartilharemos seu endereço de e-mail.</div>
+                </div>
+                <fieldset>
+                    <div class="mb-3">
+                      <label for="disabledSelect" class="form-label">Projeto a ser contratado</label>
+                      <select id="selectProjeto" class="form-select">
+                        <option disabled selected>Escolha um projeto</option>
+                        <option>Projeto 1</option>
+                        <option>Projeto 2</option>
+                        <option>Projeto 3</option>
+                        <option>Projeto 4</option>
+                        <option>Projeto 5</option>
+                        <option>Projeto 6</option>
+                      </select>
+                    </div>
+                </fieldset>
+                <div class="mb-3">
+                    <label for="disabledTextInput" class="form-label">Mensagem</label>
+                    <input type="text" id="textoMensagem" class="form-control" placeholder="Mensagem">
+                  </div>
+                <button type="submit" class="btn btn-primary" onclick="validarContato()">Enviar</button>
+            </form>
+        </div>
+        <footer class="container-fluid" style="background-color: rgb(247, 249, 250); position: fixed; bottom: 0;">
+          <div class="d-flex">
+            <div class="">
+              <img src="https://media.licdn.com/dms/image/v2/D4D03AQFsRuK8xyAjkg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1704845371820?e=2147483647&v=beta&t=rQw3Jyw4iH4hAC9gmmIosUd_-heer-tSHZX-epCaxMk" width="100" alt="">
+            </div>
+            <div class="">
+              <ul style="list-style-type:none;">
+                <li><a href="https://www.linkedin.com/in/leonardoschell/" style="text-decoration: none; color: black;">Linkedin</a></li>
+                <li><a href="#" style="text-decoration: none; color: black;">E-mail</a></li>
+              </ul>
+            </div>
+          </div>
+        </footer>    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
